@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'PostController@index')->name('top');
-Route::resource('post','PostController',['only' => ['create', 'store', 'show', 'edit', 'update']]);
+Route::resource('post','PostController',['only' => ['create', 'store', 'show', 'edit', 'update','destroy']]);
 Route::resource('comments','CommentsController',['only' => ['store']]);
